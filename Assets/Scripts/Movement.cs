@@ -9,7 +9,6 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        
     }
     private void Update()
     {

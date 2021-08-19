@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     private GameObject settings;
     [SerializeField]
     private GameObject PressAnywhere;
+    [SerializeField]
+    private Animation anim;
     private bool Paused;
     private static GameObject canvas;
     private static GameObject gameover;
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
                 PressAnywhere.SetActive(false);
                 startGame = true;
                 Health.reduceHP = StartCoroutine(Health.ReduceHealthGradually(10));
+                anim.Play();
             }
         }
     }
