@@ -62,13 +62,10 @@ public class Collision : MonoBehaviour
         }
         else if (other.CompareTag("Finish"))
         {
-            StartCoroutine(Health.ReduceHealthGradually(40));
-        }
-        else if (other.CompareTag("Multiplier"))
-        {
-            finish = true;
             StopCoroutine(Health.reduceHP);
+            finish = true;
             Movement.speed = 10;
+            StartCoroutine(Health.ReduceHealthGradually(40));
         }
     }
 }

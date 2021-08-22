@@ -12,7 +12,7 @@ public class Blades : MonoBehaviour
         firstChildMinPos = firstChild.position.x;
         secondChildMinPos = secondChild.position.x;
         maxPos = firstChild.localScale.x;
-        speed = Random.Range(3, 7);
+        speed = 4;
         startTime = Random.Range(0, 4);
     }
     private void Update()

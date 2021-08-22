@@ -99,9 +99,9 @@ public class Debug : MonoBehaviour
         Health.minHealth = MinHPslider.value;
         CVslider.value = 30;
         Collision.collectibleValue = (int)CVslider.value;
-        Nslider.value = 5;
+        Nslider.value = 6;
         Needles.speed = Nslider.value + ((Nslider.maxValue - Nslider.value * 2) + Nslider.minValue);
-        Bslider.value = 5;
+        Bslider.value = 6;
         Blades.speed = Bslider.value + ((Bslider.maxValue - Bslider.value * 2) + Bslider.minValue);
         COslider.value = 10;
         CameraFollow.offset = -COslider.value;
