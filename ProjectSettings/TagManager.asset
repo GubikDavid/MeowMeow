@@ -12,6 +12,7 @@ TagManager:
   - Trigger
   - OutOfBounds
   - Multiplier
+  - Yarn
   layers:
   - Default
   - TransparentFX
