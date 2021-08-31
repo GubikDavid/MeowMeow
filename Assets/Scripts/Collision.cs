@@ -46,13 +46,13 @@ public class Collision : MonoBehaviour
         }
         else if (other.CompareTag("Needles") && ableToCollide)
         {
-            Health.ChangeValue(-45);
+            Health.ChangeValue(-30);
             StartCoroutine(CharacterBlink(4, 0.2f));
             Handheld.Vibrate();
         }
         else if ((other.CompareTag("Blades") || other.CompareTag("Obstacle")) && ableToCollide)
         {
-            Health.ChangeValue(-25);
+            Health.ChangeValue(-20);
             StartCoroutine(CharacterBlink(4, 0.2f));
             Handheld.Vibrate();
         }

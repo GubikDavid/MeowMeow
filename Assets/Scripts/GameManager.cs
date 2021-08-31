@@ -6,8 +6,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject settings;
     [SerializeField]
-    private GameObject PressAnywhere;
-    [SerializeField]
     private GameObject Controls;
     [SerializeField]
     private Animation anim;
@@ -25,11 +23,10 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (PressAnywhere.activeInHierarchy)
+        if (Controls.activeInHierarchy)
         {
             if (Input.touchCount > 0)
             {
-                PressAnywhere.SetActive(false);
                 Controls.SetActive(false);
                 startGame = true;
                 Health.reduceHP = StartCoroutine(Health.ReduceHealthGradually(10));
@@ -39,7 +36,7 @@ public class GameManager : MonoBehaviour
     }
     public void PauseUnPause()
     {
-        if (!finish.activeInHierarchy && !gameover.activeInHierarchy && !Collision.finish && !PressAnywhere.activeInHierarchy)
+        if (!finish.activeInHierarchy && !gameover.activeInHierarchy && !Collision.finish && !Controls.activeInHierarchy)
         {
             if (Paused)
             {
