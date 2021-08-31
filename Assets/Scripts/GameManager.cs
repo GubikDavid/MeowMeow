@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject PressAnywhere;
     [SerializeField]
+    private GameObject Controls;
+    [SerializeField]
     private Animation anim;
     private bool Paused;
     private static GameObject canvas;
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
             if (Input.touchCount > 0)
             {
                 PressAnywhere.SetActive(false);
+                Controls.SetActive(false);
                 startGame = true;
                 Health.reduceHP = StartCoroutine(Health.ReduceHealthGradually(10));
                 anim.Play();

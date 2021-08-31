@@ -4,7 +4,7 @@ public class Movement : MonoBehaviour
 {
     public static float speed = 10;
     //private readonly float speedModifier = 45f;
-    private readonly float speedModifier = 30000f;
+    private readonly float speedModifier = 45000f;
     private Rigidbody rb;
     private Vector3 newPosition;
     //private float move;
@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         Move();
     }
