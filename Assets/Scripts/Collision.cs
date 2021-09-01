@@ -65,7 +65,7 @@ public class Collision : MonoBehaviour
             StopCoroutine(Health.reduceHP);
             finish = true;
             Movement.speed = 10;
-            StartCoroutine(Health.ReduceHealthGradually(30));
+            StartCoroutine(Health.ReduceHealthGradually(3));
         }
     }
 }

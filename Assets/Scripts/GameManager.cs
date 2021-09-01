@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
             {
                 Controls.SetActive(false);
                 startGame = true;
-                Health.reduceHP = StartCoroutine(Health.ReduceHealthGradually(10));
                 anim.Play();
             }
         }

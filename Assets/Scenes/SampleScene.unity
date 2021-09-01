@@ -4256,7 +4256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slide to move
+  m_text: Hold to move
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9728,7 +9728,6 @@ GameObject:
   - component: {fileID: 1354906844}
   - component: {fileID: 1354906846}
   - component: {fileID: 1354906845}
-  - component: {fileID: 1354906847}
   m_Layer: 5
   m_Name: Slide
   m_TagString: Untagged
@@ -9793,21 +9792,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354906843}
   m_CullTransparentMesh: 1
---- !u!114 &1354906847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354906843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
-  m_EffectDistance: {x: 0.2, y: -0.5}
-  m_UseGraphicAlpha: 1
 --- !u!1 &1355674812
 GameObject:
   m_ObjectHideFlags: 0
@@ -11394,6 +11378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trail: {fileID: 542843132}
+  CatAnim: {fileID: 5236050926913842035}
+  Controls: {fileID: 1111767523}
 --- !u!114 &1653563168
 MonoBehaviour:
   m_ObjectHideFlags: 0
