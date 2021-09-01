@@ -16,9 +16,7 @@ public class FollowYarn : MonoBehaviour
     void Update()
     {
         int num = (int)(Health.health / 20) - 1;
-        //transform.position = new Vector3(Mathf.SmoothStep(min, max, Mathf.PingPong((Time.time - startTime) / speed, 1)), transform.position.y, transform.position.z);
         float t = (Time.time - startTime) / duration;
-        
         if (num <= 4) transform.position = new Vector3(target.transform.position.x, transform.position.y, Mathf.SmoothStep(transform.position.z, target.transform.position.z - .858f, t));//transform.position = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z - .858f);
         else transform.position = new Vector3(target.transform.position.x, transform.position.y, Mathf.SmoothStep(transform.position.z, target.transform.position.z - (num <= 9 ? positions[num - 5] : transform.localScale.x / 2 + .23f), t));
         transform.rotation = Quaternion.Lerp(Quaternion.Euler(transform.rotation.eulerAngles), Quaternion.Euler(new Vector3(num < 8 ? rotations[num] : rotations[8], transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z)), Time.deltaTime / .8f);

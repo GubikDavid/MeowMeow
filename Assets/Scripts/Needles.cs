@@ -7,7 +7,7 @@ public class Needles : MonoBehaviour
     void Start()
     {
         min = transform.position.x;
-        if (min < 0) max = transform.position.x;
+        if (min < 0) max = transform.position.x - 5;
         else max = transform.position.x + 5;
         speed = 4;
         startTime = Random.Range(0, 4);
