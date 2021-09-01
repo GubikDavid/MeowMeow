@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     }
     public void PauseUnPause()
     {
-        if (!finish.activeInHierarchy && !gameover.activeInHierarchy && !Collision.finish && !Controls.activeInHierarchy)
+        if (!finish.activeInHierarchy && !gameover.activeInHierarchy && !Collision.finish)
         {
             if (Paused)
             {

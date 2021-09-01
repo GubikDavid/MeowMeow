@@ -8,7 +8,7 @@ public class Collision : MonoBehaviour
     private Transform Cat;
     private bool ableToCollide = true;
     public static bool finish;
-    public static int collectibleValue = 30;
+    public static float collectibleValue = 30;
     void Start()
     {
         rend = Cat.GetComponent<Renderer>();
@@ -65,7 +65,7 @@ public class Collision : MonoBehaviour
             StopCoroutine(Health.reduceHP);
             finish = true;
             Movement.speed = 10;
-            StartCoroutine(Health.ReduceHealthGradually(40));
+            StartCoroutine(Health.ReduceHealthGradually(30));
         }
     }
 }

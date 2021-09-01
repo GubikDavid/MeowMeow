@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-
 public class Debug : MonoBehaviour
 {
     [SerializeField]
@@ -36,8 +35,6 @@ public class Debug : MonoBehaviour
     private TextMeshProUGUI FOVtxt;
     [SerializeField]
     private Slider FOVslider;
-    
-    
     void Awake()
     {
         Pslider.value = Movement.speed;
@@ -67,7 +64,7 @@ public class Debug : MonoBehaviour
     public void UpdateCV()
     {
         CVtxt.text = "Collectible value: " + CVslider.value;
-        Collision.collectibleValue = (int)CVslider.value;
+        Collision.collectibleValue = CVslider.value;
     }
     public void UpdateNeedlesSpeed()
     {
@@ -98,7 +95,7 @@ public class Debug : MonoBehaviour
         MinHPslider.value = 20;
         Health.minHealth = MinHPslider.value;
         CVslider.value = 30;
-        Collision.collectibleValue = (int)CVslider.value;
+        Collision.collectibleValue = CVslider.value;
         Nslider.value = 6;
         Needles.speed = Nslider.value + ((Nslider.maxValue - Nslider.value * 2) + Nslider.minValue);
         Bslider.value = 6;
