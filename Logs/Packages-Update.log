@@ -82,3 +82,11 @@ Update Mode: updateDependencies
 
 The following packages were removed:
   com.unity.device-simulator@3.0.1-preview
+
+=== Thu Sep  2 12:27:35 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.7.1 to 1.9.0
